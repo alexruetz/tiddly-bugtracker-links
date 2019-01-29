@@ -1,0 +1,11 @@
+issuetrackerurl: 
+title: $:/plugins/alexruetz/tiddly-issuelinks/config
+
+<table>
+  <tr>
+    <th align="left">Issue tracker base url:</th>
+	<td>
+<$edit-text field="issuetrackerurl" tiddler="$:/plugins/alexruetz/tiddly-issuelinks/config"/>
+</td>
+</tr>
+</table>

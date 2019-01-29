@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/alexruetz/tiddly-issuelinks/links.js
+title: $:/plugins/alexruetz/tiddly-issuelinks/issuelinks.js
 type: application/javascript
 module-type: wikirule
 
@@ -11,8 +11,7 @@ module-type: wikirule
     "use strict";
 
     // var URL_TID = "$:/config/tiddly-issuelinks/url";
-    var url = "";
-    exports.name = "links";
+    exports.name = "issuelinks";
     exports.types = { inline: true };
 
     exports.init = function (parser) {
@@ -25,8 +24,10 @@ module-type: wikirule
     Parse the most recent match
     */
     exports.parse = function () {
-        // var url =  this.wiki.getTiddlerText(URL_TID,"");
-
+		
+		var configWidgetTitle = "$:/plugins/alexruetz/tiddly-issuelinks/config";
+		var configWidgetFields = $tw.wiki.getTiddler(configWidgetTitle).fields;
+		var url = configWidgetFields.issuetrackerurl;
         // Get the details of the match
         var linkText = this.match[0];
         // Move past the macro call
