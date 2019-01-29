@@ -1,0 +1,9 @@
+{
+	"title": "$:/plugins/alexruetz/tiddly-issuelinks",
+	"description": "Provides additional Wikirule for Integration Bug Tracker Issues",
+	"author": "Alexander Ruetz",
+	"version": "0.1.0",
+	"core-version": ">=5.0.8",
+	"source": "https://github.com/alexruetz/tiddly-issuelinks",
+	"plugin-type": "plugin"
+}
