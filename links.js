@@ -18,7 +18,7 @@ module-type: wikirule
     exports.init = function (parser) {
         this.parser = parser;
         // Regexp to match
-        this.matchRegExp = /^[A-Z]+\-[0-9]+/mg;
+        this.matchRegExp = /[A-Z]+\-[0-9]+/mg;
     };
 
     /*
